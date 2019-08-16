@@ -74,6 +74,7 @@ const FormikForm = withFormik({
       })
       .then(response => {
         console.log("response", response);
+        window.location.href = window.location.href;
       })
       .catch(function(error) {
         console.log(error);
